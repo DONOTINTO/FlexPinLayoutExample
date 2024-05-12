@@ -9,19 +9,27 @@
 /* Begin PBXBuildFile section */
 		AC5A7C3C2BF1104E00A13991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7C3B2BF1104E00A13991 /* AppDelegate.swift */; };
 		AC5A7C3E2BF1104E00A13991 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7C3D2BF1104E00A13991 /* SceneDelegate.swift */; };
-		AC5A7C402BF1104E00A13991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7C3F2BF1104E00A13991 /* ViewController.swift */; };
+		AC5A7C402BF1104E00A13991 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7C3F2BF1104E00A13991 /* MainViewController.swift */; };
 		AC5A7C452BF1105000A13991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC5A7C442BF1105000A13991 /* Assets.xcassets */; };
 		AC5A7C482BF1105000A13991 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = AC5A7C472BF1105000A13991 /* Base */; };
+		AC5A7C512BF111E100A13991 /* FlexLayout in Frameworks */ = {isa = PBXBuildFile; productRef = AC5A7C502BF111E100A13991 /* FlexLayout */; };
+		AC5A7C542BF1120500A13991 /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = AC5A7C532BF1120500A13991 /* PinLayout */; };
+		AC5A7C562BF112CD00A13991 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7C552BF112CD00A13991 /* BaseViewController.swift */; };
+		AC5A7C582BF1148500A13991 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7C572BF1148500A13991 /* BaseView.swift */; };
+		AC5A7C5A2BF1169400A13991 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5A7C592BF1169400A13991 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC5A7C382BF1104E00A13991 /* FlexPinLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlexPinLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC5A7C3B2BF1104E00A13991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC5A7C3D2BF1104E00A13991 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AC5A7C3F2BF1104E00A13991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC5A7C3F2BF1104E00A13991 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AC5A7C442BF1105000A13991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC5A7C472BF1105000A13991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC5A7C492BF1105000A13991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5A7C552BF112CD00A13991 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AC5A7C572BF1148500A13991 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		AC5A7C592BF1169400A13991 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC5A7C542BF1120500A13991 /* PinLayout in Frameworks */,
+				AC5A7C512BF111E100A13991 /* FlexLayout in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +66,10 @@
 			children = (
 				AC5A7C3B2BF1104E00A13991 /* AppDelegate.swift */,
 				AC5A7C3D2BF1104E00A13991 /* SceneDelegate.swift */,
-				AC5A7C3F2BF1104E00A13991 /* ViewController.swift */,
+				AC5A7C3F2BF1104E00A13991 /* MainViewController.swift */,
+				AC5A7C592BF1169400A13991 /* MainView.swift */,
+				AC5A7C552BF112CD00A13991 /* BaseViewController.swift */,
+				AC5A7C572BF1148500A13991 /* BaseView.swift */,
 				AC5A7C442BF1105000A13991 /* Assets.xcassets */,
 				AC5A7C462BF1105000A13991 /* LaunchScreen.storyboard */,
 				AC5A7C492BF1105000A13991 /* Info.plist */,
@@ -80,6 +93,10 @@
 			dependencies = (
 			);
 			name = FlexPinLayoutExample;
+			packageProductDependencies = (
+				AC5A7C502BF111E100A13991 /* FlexLayout */,
+				AC5A7C532BF1120500A13991 /* PinLayout */,
+			);
 			productName = FlexPinLayoutExample;
 			productReference = AC5A7C382BF1104E00A13991 /* FlexPinLayoutExample.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +125,10 @@
 				Base,
 			);
 			mainGroup = AC5A7C2F2BF1104E00A13991;
+			packageReferences = (
+				AC5A7C4F2BF111E100A13991 /* XCRemoteSwiftPackageReference "FlexLayout" */,
+				AC5A7C522BF1120500A13991 /* XCRemoteSwiftPackageReference "PinLayout" */,
+			);
 			productRefGroup = AC5A7C392BF1104E00A13991 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,7 +155,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC5A7C402BF1104E00A13991 /* ViewController.swift in Sources */,
+				AC5A7C402BF1104E00A13991 /* MainViewController.swift in Sources */,
+				AC5A7C5A2BF1169400A13991 /* MainView.swift in Sources */,
+				AC5A7C562BF112CD00A13991 /* BaseViewController.swift in Sources */,
+				AC5A7C582BF1148500A13991 /* BaseView.swift in Sources */,
 				AC5A7C3C2BF1104E00A13991 /* AppDelegate.swift in Sources */,
 				AC5A7C3E2BF1104E00A13991 /* SceneDelegate.swift in Sources */,
 			);
@@ -357,6 +381,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC5A7C4F2BF111E100A13991 /* XCRemoteSwiftPackageReference "FlexLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/FlexLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.7;
+			};
+		};
+		AC5A7C522BF1120500A13991 /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC5A7C502BF111E100A13991 /* FlexLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5A7C4F2BF111E100A13991 /* XCRemoteSwiftPackageReference "FlexLayout" */;
+			productName = FlexLayout;
+		};
+		AC5A7C532BF1120500A13991 /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC5A7C522BF1120500A13991 /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC5A7C302BF1104E00A13991 /* Project object */;
 }
